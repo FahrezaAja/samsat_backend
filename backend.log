@@ -1,0 +1,248 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /register                 --> samsat_backend/controllers.Register (3 handlers)
+[GIN-debug] POST   /login                    --> samsat_backend/controllers.Login (3 handlers)
+[GIN-debug] POST   /booking                  --> samsat_backend/controllers.CreateBooking (3 handlers)
+[GIN-debug] GET    /booking/search           --> samsat_backend/controllers.SearchBooking (3 handlers)
+[GIN-debug] GET    /booking/all              --> samsat_backend/controllers.GetAllBookings (3 handlers)
+[GIN-debug] PUT    /booking/update/:id       --> samsat_backend/controllers.UpdateBooking (3 handlers)
+[GIN-debug] PUT    /baliknama/update/:id     --> samsat_backend/controllers.UpdateBalikNama (3 handlers)
+[GIN-debug] GET    /baliknama/all            --> samsat_backend/controllers.GetAllBalikNama (3 handlers)
+[GIN-debug] PUT    /mutasikendaraan/update/:id --> samsat_backend/controllers.UpdateMutasi (3 handlers)
+[GIN-debug] GET    /mutasikendaraan/all      --> samsat_backend/controllers.GetAllMutasi (3 handlers)
+[GIN-debug] GET    /me                       --> samsat_backend/controllers.Me (3 handlers)
+[GIN-debug] POST   /logout                   --> samsat_backend/controllers.Logout (3 handlers)
+[GIN-debug] PUT    /me                       --> samsat_backend/controllers.UpdateProfile (3 handlers)
+[GIN-debug] GET    /api/notifications/:user_id --> samsat_backend/controllers.GetNotifications (3 handlers)
+[GIN-debug] POST   /api/notifications/mark-read --> samsat_backend/controllers.MarkNotificationRead (3 handlers)
+[GIN-debug] POST   /admin/create             --> samsat_backend/controllers.CreateAdmin (3 handlers)
+[GIN-debug] GET    /admin/all                --> samsat_backend/controllers.GetAllAdmin (3 handlers)
+[GIN-debug] POST   /admin/login              --> samsat_backend/controllers.AdminLogin (3 handlers)
+[GIN-debug] GET    /dashboard/stats          --> samsat_backend/controllers.DashboardStats (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8080
+[GIN] 2025/11/25 - 08:25:21 | 200 |      2.8582ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:25:29 | 200 |      2.0094ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:25:39 | 200 |      2.3929ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:25:49 | 200 |      2.1926ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:25:59 | 200 |      1.7198ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:26:09 | 200 |      1.6844ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:26:19 | 200 |      2.4988ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:26:30 | 200 |      2.2125ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:26:39 | 200 |       1.067ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /register                 --> samsat_backend/controllers.Register (3 handlers)
+[GIN-debug] POST   /login                    --> samsat_backend/controllers.Login (3 handlers)
+[GIN-debug] POST   /booking                  --> samsat_backend/controllers.CreateBooking (3 handlers)
+[GIN-debug] GET    /booking/search           --> samsat_backend/controllers.SearchBooking (3 handlers)
+[GIN-debug] GET    /booking/all              --> samsat_backend/controllers.GetAllBookings (3 handlers)
+[GIN-debug] PUT    /booking/update/:id       --> samsat_backend/controllers.UpdateBooking (3 handlers)
+[GIN-debug] PUT    /baliknama/update/:id     --> samsat_backend/controllers.UpdateBalikNama (3 handlers)
+[GIN-debug] GET    /baliknama/all            --> samsat_backend/controllers.GetAllBalikNama (3 handlers)
+[GIN-debug] PUT    /mutasikendaraan/update/:id --> samsat_backend/controllers.UpdateMutasi (3 handlers)
+[GIN-debug] GET    /mutasikendaraan/all      --> samsat_backend/controllers.GetAllMutasi (3 handlers)
+[GIN-debug] GET    /me                       --> samsat_backend/controllers.Me (3 handlers)
+[GIN-debug] POST   /logout                   --> samsat_backend/controllers.Logout (3 handlers)
+[GIN-debug] PUT    /me                       --> samsat_backend/controllers.UpdateProfile (3 handlers)
+[GIN-debug] GET    /api/notifications/:user_id --> samsat_backend/controllers.GetNotifications (3 handlers)
+[GIN-debug] POST   /api/notifications/mark-read --> samsat_backend/controllers.MarkNotificationRead (3 handlers)
+[GIN-debug] POST   /admin/create             --> samsat_backend/controllers.CreateAdmin (3 handlers)
+[GIN-debug] GET    /admin/all                --> samsat_backend/controllers.GetAllAdmin (3 handlers)
+[GIN-debug] POST   /admin/login              --> samsat_backend/controllers.AdminLogin (3 handlers)
+[GIN-debug] GET    /dashboard/stats          --> samsat_backend/controllers.DashboardStats (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8080
+[GIN] 2025/11/25 - 08:27:19 | 200 |      2.3802ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:27:29 | 200 |      7.3611ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:27:40 | 200 |       1.857ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:27:44 | 200 |      1.0835ms | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:27:49 | 200 |      1.6759ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:27:59 | 200 |      1.8802ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:09 | 200 |      1.0839ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:19 | 200 |       3.365ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:29 | 200 |      1.7366ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:39 | 200 |      2.4311ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:50 | 200 |      1.6174ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:28:59 | 200 |      1.7842ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:29:09 | 200 |      2.4947ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:29:19 | 200 |      5.4464ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:29:29 | 200 |      1.6174ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:29:39 | 200 |      1.6156ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:29:49 | 200 |      1.6362ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:00 | 200 |      1.6244ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:09 | 200 |      2.0321ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:19 | 200 |      2.6291ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:29 | 200 |      1.0708ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:39 | 200 |      1.7651ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:49 | 200 |      1.6673ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:30:59 | 200 |      2.0671ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:10 | 200 |      2.5135ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:19 | 200 |      2.3422ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:29 | 200 |      2.1772ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:39 | 200 |      2.4757ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:49 | 200 |      1.8331ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:31:59 | 200 |      1.7209ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:32:09 | 200 |       1.562ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:32:20 | 200 |      1.0655ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:32:30 | 200 |      1.8674ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:32:40 | 200 |      4.3813ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:32:50 | 200 |      1.8485ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:00 | 200 |      1.2941ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:10 | 200 |      1.5864ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:21 | 200 |      1.6191ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:29 | 200 |      1.6886ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:39 | 200 |      2.0064ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:49 | 200 |      2.2155ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:33:59 | 200 |       1.015ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:09 | 200 |      2.2361ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:12 | 200 |      4.4501ms | 110.139.200.231 | GET      "/dashboard/stats"
+[GIN] 2025/11/25 - 08:34:15 | 200 |     11.1586ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:34:16 | 200 |       1.467ms | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:34:17 | 200 |       393.3µs | 110.139.200.231 | GET      "/mutasikendaraan/all"
+[GIN] 2025/11/25 - 08:34:19 | 200 |      1.9645ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:22 | 200 |      2.6625ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:34:23 | 200 |       534.5µs | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:34:23 | 200 |         549µs | 110.139.200.231 | GET      "/mutasikendaraan/all"
+[GIN] 2025/11/25 - 08:34:30 | 200 |      2.5848ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:39 | 200 |       1.622ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:44 | 200 |      1.0969ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:34:44 | 200 |       566.3µs | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:34:45 | 200 |       519.5µs | 110.139.200.231 | GET      "/mutasikendaraan/all"
+[GIN] 2025/11/25 - 08:34:49 | 200 |      1.9082ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:34:59 | 200 |       1.069ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:09 | 200 |      1.6372ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:19 | 200 |       1.114ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:31 | 200 |       1.885ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:39 | 200 |      1.7471ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:49 | 200 |      1.6003ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:35:59 | 200 |      1.9384ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:09 | 200 |      1.8118ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:19 | 200 |      1.6251ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:29 | 200 |      1.0852ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:41 | 200 |      2.5788ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:49 | 200 |      2.5107ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:36:59 | 200 |      2.2002ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:05 | 200 |      1.2773ms | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:37:09 | 200 |      1.6023ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:15 | 200 |       542.3µs | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:37:19 | 200 |      2.1895ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:29 | 200 |      1.7468ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:39 | 200 |      1.7618ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:51 | 200 |      1.6154ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:37:59 | 200 |      1.5799ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:38:09 | 200 |       1.607ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:38:19 | 200 |      1.3593ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:38:29 | 200 |      1.6178ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:38:30 | 200 |     45.0622ms | 110.139.200.231 | POST     "/logout"
+[GIN] 2025/11/25 - 08:38:58 | 200 |    110.0582ms | 110.139.200.231 | POST     "/login"
+[GIN] 2025/11/25 - 08:39:00 | 200 |      2.4441ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:39:03 | 200 |      1.0869ms | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:39:08 | 200 |      1.0511ms | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:39:10 | 200 |      1.6263ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:39:10 | 200 |      1.1298ms | 110.139.200.231 | GET      "/me"
+[GIN] 2025/11/25 - 08:39:20 | 200 |      1.6683ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:39:30 | 200 |      1.7981ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:39:40 | 200 |      1.9064ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:39:50 | 200 |       1.619ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:01 | 200 |      2.5749ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:10 | 200 |      1.8236ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:20 | 200 |      1.6397ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:30 | 200 |      1.6778ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:40 | 200 |      1.9497ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:40:50 | 200 |      1.6446ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:01 | 200 |      1.0729ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:10 | 200 |      2.0169ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:20 | 200 |      4.0234ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:30 | 200 |      6.4959ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:40 | 200 |      1.6409ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:41:50 | 200 |      1.8362ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:01 | 200 |      1.6204ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:10 | 200 |      2.2079ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:20 | 200 |      1.1014ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:30 | 200 |      1.6782ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:40 | 200 |      1.0869ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:42:50 | 200 |      1.6275ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:01 | 200 |      1.6297ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:10 | 200 |      2.1961ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:20 | 200 |      3.3912ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:30 | 200 |      1.7555ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:40 | 200 |      9.0017ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:43:40 | 200 |      2.1534ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:50 | 200 |      2.3609ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:43:59 | 200 |      3.2496ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:44:01 | 200 |      1.6072ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:44:06 | 200 |      2.9164ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:44:11 | 200 |      2.1769ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /register                 --> samsat_backend/controllers.Register (3 handlers)
+[GIN-debug] POST   /login                    --> samsat_backend/controllers.Login (3 handlers)
+[GIN-debug] POST   /booking                  --> samsat_backend/controllers.CreateBooking (3 handlers)
+[GIN-debug] GET    /booking/search           --> samsat_backend/controllers.SearchBooking (3 handlers)
+[GIN-debug] GET    /booking/all              --> samsat_backend/controllers.GetAllBookings (3 handlers)
+[GIN-debug] PUT    /booking/update/:id       --> samsat_backend/controllers.UpdateBooking (3 handlers)
+[GIN-debug] PUT    /baliknama/update/:id     --> samsat_backend/controllers.UpdateBalikNama (3 handlers)
+[GIN-debug] GET    /baliknama/all            --> samsat_backend/controllers.GetAllBalikNama (3 handlers)
+[GIN-debug] PUT    /mutasikendaraan/update/:id --> samsat_backend/controllers.UpdateMutasi (3 handlers)
+[GIN-debug] GET    /mutasikendaraan/all      --> samsat_backend/controllers.GetAllMutasi (3 handlers)
+[GIN-debug] GET    /me                       --> samsat_backend/controllers.Me (3 handlers)
+[GIN-debug] POST   /logout                   --> samsat_backend/controllers.Logout (3 handlers)
+[GIN-debug] PUT    /me                       --> samsat_backend/controllers.UpdateProfile (3 handlers)
+[GIN-debug] GET    /api/notifications/:user_id --> samsat_backend/controllers.GetNotifications (3 handlers)
+[GIN-debug] POST   /api/notifications/mark-read --> samsat_backend/controllers.MarkNotificationRead (3 handlers)
+[GIN-debug] POST   /admin/create             --> samsat_backend/controllers.CreateAdmin (3 handlers)
+[GIN-debug] GET    /admin/all                --> samsat_backend/controllers.GetAllAdmin (3 handlers)
+[GIN-debug] POST   /admin/login              --> samsat_backend/controllers.AdminLogin (3 handlers)
+[GIN-debug] GET    /dashboard/stats          --> samsat_backend/controllers.DashboardStats (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:8080
+[GIN] 2025/11/25 - 08:44:20 | 200 |      1.6501ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:44:21 | 200 |      1.6363ms | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:44:24 | 200 |       569.3µs | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:44:30 | 200 |       4.255ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:44:40 | 200 |      3.0017ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:44:50 | 200 |      5.4291ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:00 | 200 |       1.639ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:09 | 200 |      1.0834ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:45:11 | 200 |      1.5673ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:17 | 200 |       546.5µs | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:45:20 | 200 |      2.9754ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:25 | 200 |    155.1106ms | 110.139.200.231 | PUT      "/booking/update/30"
+[GIN] 2025/11/25 - 08:45:27 | 200 |      1.2548ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:45:28 | 200 |      1.0869ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:45:30 | 200 |      10.474ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:30 | 200 |     13.5524ms | 110.139.200.231 | POST     "/api/notifications/mark-read"
+[GIN] 2025/11/25 - 08:45:40 | 200 |      1.6112ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:45:50 | 200 |      1.7208ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:00 | 200 |      1.5837ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:11 | 200 |      1.5801ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:20 | 200 |      2.1742ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:30 | 200 |      1.0717ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:32 | 200 |       654.5µs | 110.139.200.231 | GET      "/dashboard/stats"
+[GIN] 2025/11/25 - 08:46:35 | 200 |      1.0973ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:46:36 | 200 |      1.0873ms | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:46:36 | 200 |      1.9204ms | 110.139.200.231 | GET      "/mutasikendaraan/all"
+[GIN] 2025/11/25 - 08:46:40 | 200 |      2.4604ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:46:42 | 200 |      1.7561ms | 110.139.200.231 | GET      "/booking/all"
+[GIN] 2025/11/25 - 08:46:43 | 200 |      1.0739ms | 110.139.200.231 | GET      "/baliknama/all"
+[GIN] 2025/11/25 - 08:46:43 | 200 |       537.5µs | 110.139.200.231 | GET      "/mutasikendaraan/all"
+[GIN] 2025/11/25 - 08:46:50 | 200 |      2.5198ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:47:00 | 200 |       1.425ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:47:11 | 200 |       1.096ms | 110.139.200.231 | GET      "/api/notifications/9"
+[GIN] 2025/11/25 - 08:47:21 | 200 |      1.7918ms | 110.139.200.231 | GET      "/api/notifications/9"
