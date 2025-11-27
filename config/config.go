@@ -11,7 +11,7 @@ import (
 var DB *gorm.DB
 
 func ConnectDatabase() {
-	dsn := "samsat_user:password@tcp(10.10.10.153:3306)/samsat_db?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root@tcp(127.0.0.1:3306)/samsat_db?charset=utf8mb4&parseTime=True&loc=Local"
 	database, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Gagal koneksi database: ", err)
