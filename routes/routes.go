@@ -44,6 +44,7 @@ func SetupRoutes(r *gin.Engine) {
 	r.POST("/api/notifications/mark-read", controllers.MarkNotificationRead)
 	r.GET("/api/notifications/recent/:user_id", controllers.GetUserNotificationsRecent)
 	r.DELETE("/api/notifications/:id", controllers.DeleteNotification)
+	r.POST("/save-fcm", controllers.SaveFCMToken)
 
 	// ======================================================
 	// ROUTES ADMIN

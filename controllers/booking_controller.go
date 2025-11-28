@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"bytes"
-	"encoding/json"
+	// "bytes"
+	// "encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -71,36 +71,36 @@ func normalizePhone(ph string) string {
 	return strings.TrimSpace(strings.ReplaceAll(ph, " ", ""))
 }
 
-// ======================================================
-// FUNGSI KIRIM NOTIFIKASI via FCM
-// ======================================================
-func sendNotification(token, title, body string) {
-	payload := map[string]interface{}{
-		"to": token,
-		"notification": map[string]string{
-			"title": title,
-			"body":  body,
-		},
-		"data": map[string]string{
-			// Bisa tambahkan payload data kustom di sini
-			"click_action": "FLUTTER_NOTIFICATION_CLICK",
-		},
-	}
+// // ======================================================
+// // FUNGSI KIRIM NOTIFIKASI via FCM
+// // ======================================================
+// func sendNotification(token, title, body string) {
+// 	payload := map[string]interface{}{
+// 		"to": token,
+// 		"notification": map[string]string{
+// 			"title": title,
+// 			"body":  body,
+// 		},
+// 		"data": map[string]string{
+// 			// Bisa tambahkan payload data kustom di sini
+// 			"click_action": "FLUTTER_NOTIFICATION_CLICK",
+// 		},
+// 	}
 
-	payloadBytes, _ := json.Marshal(payload)
-	req, _ := http.NewRequest("POST", "https://fcm.googleapis.com/fcm/send", bytes.NewBuffer(payloadBytes))
-	req.Header.Set("Authorization", "key="+FCMServerKey)
-	req.Header.Set("Content-Type", "application/json")
+// 	payloadBytes, _ := json.Marshal(payload)
+// 	req, _ := http.NewRequest("POST", "https://fcm.googleapis.com/fcm/send", bytes.NewBuffer(payloadBytes))
+// 	req.Header.Set("Authorization", "key="+FCMServerKey)
+// 	req.Header.Set("Content-Type", "application/json")
 
-	client := &http.Client{Timeout: 10 * time.Second}
-	resp, err := client.Do(req)
-	if err != nil {
-		fmt.Println("❌ Gagal kirim FCM:", err)
-		return
-	}
-	defer resp.Body.Close()
-	fmt.Println("✅ Notifikasi terkirim ke token:", token, "| Status:", resp.Status)
-}
+// 	client := &http.Client{Timeout: 10 * time.Second}
+// 	resp, err := client.Do(req)
+// 	if err != nil {
+// 		fmt.Println("❌ Gagal kirim FCM:", err)
+// 		return
+// 	}
+// 	defer resp.Body.Close()
+// 	fmt.Println("✅ Notifikasi terkirim ke token:", token, "| Status:", resp.Status)
+// }
 
 // ======================================================
 // REGISTER TOKEN DARI FLUTTER
@@ -402,7 +402,7 @@ func SearchBooking(c *gin.Context) {
 // Fungsi Inisialisasi Firebase Client
 // ======================================================
 func initializeFirebase() (*messaging.Client, error) {
-	app, err := firebase.NewApp(context.Background(), nil, option.WithCredentialsFile("config/firebase-adminsdk.json"))
+	app, err := firebase.NewApp(context.Background(), nil, option.WithCredentialsFile("config/kunjungi-sa-kampung-firebase-adminsdk-fbsvc-db597b2b8d.json"))
 	if err != nil {
 		return nil, fmt.Errorf("error initializing app: %v", err)
 	}
@@ -871,3 +871,56 @@ func CheckUpdate(c *gin.Context) {
 	})
 }
 
+
+// Request body dari Flutter:
+// {
+//   "user_id": "1",
+//   "fcm_token": "xxxxx"
+// }
+type SaveFCMRequest struct {
+	UserID   string `json:"user_id" binding:"required"`
+	FCMToken string `json:"fcm_token" binding:"required"`
+}
+
+// POST /api/save-fcm
+func SaveFCMToken(c *gin.Context) {
+	var req SaveFCMRequest
+
+	if err := c.ShouldBindJSON(&req); err != nil {
+		utils.Error(c, "Payload tidak valid: "+err.Error())
+		return
+	}
+
+	// Cek apakah user dengan ID ini ada (opsional tapi bagus untuk validasi)
+	var user models.User
+	if err := config.DB.Where("id = ?", req.UserID).First(&user).Error; err != nil {
+		utils.Error(c, "User tidak ditemukan")
+		return
+	}
+
+	// NomorHP diambil dari user, karena model UserToken pakai NomorHP sebagai kunci
+	phone := user.NomorHP
+	if phone == "" {
+		utils.Error(c, "User belum memiliki nomor HP yang tersimpan")
+		return
+	}
+
+	// Simpan ke tabel user_tokens
+	var userToken models.UserToken
+	if err := config.DB.Where("nomor_hp = ?", phone).
+		Assign(models.UserToken{FCMToken: req.FCMToken}).
+		FirstOrCreate(&userToken).Error; err != nil {
+
+		utils.Error(c, "Gagal menyimpan FCM token: "+err.Error())
+		return
+	}
+
+	// Optional: simpan juga ke in-memory map yang sudah kamu pakai
+	addTokenForPhone(phone, req.FCMToken)
+
+	utils.Success(c, gin.H{
+		"message":   "FCM token berhasil disimpan",
+		"nomor_hp":  phone,
+		"fcm_token": req.FCMToken,
+	})
+}
